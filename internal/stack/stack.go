@@ -93,7 +93,7 @@ func (s *Stack) IsSorted() bool {
 		return false
 	}
 	for i := 0; i < len(s.A)-1; i++ {
-		if s.A[i] < s.A[i+1] {
+		if s.A[i] > s.A[i+1] {
 			return false
 		}
 	}
